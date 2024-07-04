@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  background-color: hsla(221, 100%, 96%, 0.25);
+}
+
+.container {
+  display: flex;
+  height: 28.125rem;
+  width: 40rem;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+.result {
+  height: 100%;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.57rem;
+  background: linear-gradient(to top, hsla(241, 81%, 54%), hsl(252, 79%, 59%));
+}
+
+.result h3 {
+  font-size: 1.25rem;
+  color: hsla(0, 0%, 100%, 0.6);
+  margin-top: 1.875rem;
+}
+
+.circle {
+  height: 10.94rem;
+  width: 10.94rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  border-radius: 50%;
+  background: linear-gradient(
+    180deg,
+    hsla(256, 72%, 46%, 1),
+    hsla(241, 72%, 46%, 0)
+  );
+}
+
+.circle #heading {
+  font-size: 3.75rem;
+  font-weight: 800;
+  color: hsl(0, 0%, 100%);
+}
+
+.circle p {
+  font-size: 1rem;
+  color: hsla(0, 0%, 100%, 0.4);
+}
+
+.bottom {
+  text-align: center;
+  margin: 0 2.8rem 2.8rem 2.8rem;
+}
+
+.bottom h1 {
+  color: hsl(0, 0%, 100%);
+  padding-bottom: 1rem;
+}
+
+.bottom p {
+  font-size: 1rem;
+  color: hsla(0, 0%, 100%, 0.7);
+}
+.summary {
+  height: 100%;
+  width: 20rem;
+  border-top-right-radius: 1.57rem;
+  border-bottom-right-radius: 1.57rem;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 1rem 0.63rem 0.63rem 1px hsla(241, 100%, 89%, 0.2);
+}
+
+.summary-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 2.19rem 2.5rem 2.19rem;
+}
+
+.summary-item h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: hsla(224, 30%, 27%, 0.9);
+  padding: 2.19rem 0 1.25rem 0;
+}
+
+.item {
+  height: 3.13rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sum {
+  display: flex;
+}
+
+.sum p {
+  padding-left: 10px;
+}
+
+.item-1 {
+  padding: 0 1rem;
+  background-color: hsla(0, 100%, 67%, 0.07);
+}
+
+.item-2 {
+  padding: 0 1rem;
+  background-color: hsla(39, 100%, 56%, 0.07);
+}
+
+.item-3 {
+  padding: 0 1rem;
+  background-color: hsla(166, 100%, 89%, 0.2);
+}
+
+.item-4 {
+  padding: 0 1rem;
+  background-color: hsla(234, 85%, 27%, 0.07);
+}
+
+#reaction {
+  font-weight: 500;
+  color: hsla(0, 100%, 67%, 0.7);
+}
+
+#memory {
+  font-weight: 500;
+  color: hsla(39, 100%, 56%, 0.7);
+}
+
+#verbal {
+  font-weight: 500;
+  color: hsla(166, 100%, 37%);
+}
+
+#visual {
+  font-weight: 500;
+  color: hsl(234, 85%, 45%);
+}
+.num-left {
+  font-weight: 600;
+  color: hsl(224, 30%, 27%);
+}
+
+.fslash {
+  font-weight: 600;
+  color: hsla(224, 30%, 27%, 0.5);
+}
+
+.num-right {
+  font-weight: 600;
+  color: hsla(224, 30%, 27%, 0.5);
+}
+
+button {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 1rem;
+  background-color: hsl(224, 30%, 27%);
+  color: hsla(0, 0%, 100%, 0.9);
+  font-weight: 600;
+  height: 3.125rem;
+  margin-top: 1.25rem;
+  outline: none;
+  border: none;
+  border-radius: 2.5rem;
+  cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(to top, hsla(241, 81%, 54%), hsl(252, 79%, 59%));
+}
+
+a {
+  color: hsl(224, 30%, 27%);
+  text-decoration: none;
+}
+
+@media (max-width: 375px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    background-color: hsl(0, 0%, 100%);
+    position: static;
+    top: 0rem;
+    left: 0rem;
+    transform: translate(0);
+  }
+
+  .result {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 0rem;
+    border-top-right-radius: 0rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    background: linear-gradient(
+      to top,
+      hsla(241, 81%, 54%),
+      hsl(252, 79%, 59%)
+    );
+  }
+
+  .result h3 {
+    margin: 1.875rem;
+  }
+
+  .bottom h1 {
+    margin-top: 1rem;
+  }
+
+  .bottom {
+    text-align: center;
+    margin: 0 2.8rem 2.8rem 2.8rem;
+  }
+
+  .summary {
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: none;
+  }
+
+  .summary-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 1rem 1rem 1rem;
+}
+}
