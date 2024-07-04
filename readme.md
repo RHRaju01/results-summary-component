@@ -6,6 +6,6 @@ Technology: HTML, CSS
 
 Challenge Link: https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV
 
-Github Page:
+Github Page: https://rhraju01.github.io/results-summary-component/
 
 Status: Completed
